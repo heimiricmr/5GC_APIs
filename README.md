@@ -9,7 +9,7 @@ All rights reserved.
 ```
 API version: **March 2024**<br/>
 Release status: **Frozen** <sup>&#x1F512;</sup><br/>
-Other releases: [Rel-18 (Open)](https://github.com/jdegre/5GC_APIs/tree/Rel-18), [Rel-17 (Frozen)](https://github.com/jdegre/5GC_APIs/tree/Rel-17), [Rel-15 (Frozen)](https://github.com/jdegre/5GC_APIs/tree/Rel-15)<br/>
+Other releases: [Rel-18 (Frozen)](https://github.com/jdegre/5GC_APIs/tree/Rel-18), [Rel-17 (Frozen)](https://github.com/jdegre/5GC_APIs/tree/Rel-17), [Rel-15 (Frozen)](https://github.com/jdegre/5GC_APIs/tree/Rel-15)<br/>
 - [Info about 3GPP Releases and their status](https://www.3gpp.org/specifications/67-releases)
 <br/><br/>
 
