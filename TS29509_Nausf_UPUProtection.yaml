@@ -1,14 +1,14 @@
 openapi: 3.0.0
 info:
-  version: 1.2.0
+  version: 1.2.1
   title: Nausf_UPUProtection Service
   description: |
     AUSF UPU Protection Service.  
-    © 2022, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI, TTA, TTC).  
+    © 2024, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI, TTA, TTC).  
     All rights reserved.
 
 externalDocs:
-  description: 3GPP TS 29.509 V17.6.0; 5G System; Authentication Server Services
+  description: 3GPP TS 29.509 V17.10.0; 5G System; Authentication Server Services
   url: 'https://www.3gpp.org/ftp/Specs/archive/29_series/29.509'
 
 servers:
@@ -109,7 +109,7 @@ components:
         - counterUpu
 
     UpuData:
-      description: Contains UE parameters update data set (e.g., the updated Routing ID Data or the Default configured NSSAI).
+      description: Contains UE parameters update data set (e.g., the updated Routing ID Data or the Default configured NSSAI or the disaster roaming parameters).
       type: object
       properties:
         secPacket:
@@ -121,6 +121,10 @@ components:
           minItems: 1
         routingId:
           $ref: 'TS29544_Nspaf_SecuredPacket.yaml#/components/schemas/RoutingId'
+        drei:
+          type: boolean
+        aol:
+          type: boolean
 
 #
 # SIMPLE TYPES:
