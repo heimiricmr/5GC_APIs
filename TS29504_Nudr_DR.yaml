@@ -14,6 +14,11 @@ externalDocs:
 
 servers:
   - description: API root
+    url: '{apiRoot}/nudr-dr/v1'
+    variables:
+      apiRoot:
+        default: https://example.com
+  - description: API root
     url: '{apiRoot}/nudr-dr/v2'
     variables:
       apiRoot:
