@@ -865,7 +865,7 @@ paths:
                 $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
     put:
       summary: To create an individual SMF context data of a UE in the UDR
-      operationId: CreateSmfContextNon3gpp
+      operationId: CreateSmfContext3gpp
       tags:
         - SMF Registration (Document)
       parameters:
