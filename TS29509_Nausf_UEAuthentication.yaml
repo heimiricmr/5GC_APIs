@@ -270,7 +270,7 @@ components:
       type: string
       pattern: "[A-Fa-f0-9]{32}"
     AuthType:
-      anyOf:		
+      anyOf:
         - type: string
           enum:
             - 5G_AKA
