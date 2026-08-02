@@ -104,6 +104,23 @@ paths:
             application/problem+json:
               schema:
                 $ref: 'TS29571_CommonData.yaml#/components/schemas/ProblemDetails'
+    delete:
+      operationId: Delete5gAkaAuthenticationResult
+      parameters:
+        - name: authCtxId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Authentication result deleted
+        '400':
+          $ref: 'TS29571_CommonData.yaml#/components/responses/400'
+        '404':
+          $ref: 'TS29571_CommonData.yaml#/components/responses/404'
+        default:
+          $ref: 'TS29571_CommonData.yaml#/components/responses/default'
   /ue-authentications/{authCtxId}/eap-session:
     post:
       operationId: EapAuthMethod
